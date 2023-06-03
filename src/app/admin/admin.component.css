@@ -1,0 +1,43 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: cadetblue;
+}
+
+nav button{
+    padding: 10px;
+    color: blueviolet;
+}
+
+nav p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+}
+
+thead th{
+    background-color: rgb(61, 60, 60);
+    color: white;
+    height: 30px;
+}
+
+tbody{
+    text-align: center;
+}
+
+.chart-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas { 
+    width: 700px;
+    height: 500px;
+ }

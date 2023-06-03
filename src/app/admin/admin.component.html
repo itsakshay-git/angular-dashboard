@@ -1,0 +1,39 @@
+<nav>
+  <p>Welcome, {{ role }}!</p>
+  <button (click)="logout()">Logout</button>
+</nav>
+
+<div class="chart-box">
+  <div>
+    <h2>Chart</h2>
+    <canvas id="chart"></canvas>
+  </div>
+</div>
+
+<h2>Ratings Table</h2>
+<table cellspacing="0"  cellpadding="0">
+  <thead>
+    <tr>
+      <th>Sr. No</th>
+      <th>Manager</th>
+      <th>Employee ID</th>
+      <th>Employee Name</th>
+      <th>Department</th>
+
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rating of ratingsData">
+      <td>{{ rating.srNo }}</td>
+      <td>{{ rating.manager }}</td>
+      <td>{{ rating.employeeId }}</td>
+      <td>{{ rating.employeeName }}</td>
+      <td>{{ rating.department }}</td>
+      <td>{{ rating.rating }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+

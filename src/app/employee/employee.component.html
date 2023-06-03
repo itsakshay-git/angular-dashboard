@@ -1,0 +1,25 @@
+<nav>
+  <p>Welcome, {{ role }}!</p>
+  <button (click)="logout()">Logout</button>
+</nav>
+
+<h2>Employee Rating and Reward</h2>
+<div class="rating-reward">
+  <p class="rating">Rating: {{ employeeRating.rating }}</p>
+  <p class="reward">Reward: {{ employeeRating.reward }}</p>
+</div>
+
+<h2>Comment on Manager's Comment</h2>
+<div class="comment-section">
+  <div class="comment">
+    <label for="managerComment">Manager's Comment:</label>
+    <p>{{ managerComment }}</p>
+  </div>
+  <div class="comment">
+    <label for="employeeComment">Employee Comment:</label>
+    <textarea id="employeeComment" name="employeeComment" [(ngModel)]="managerComment"></textarea>
+  </div>
+  <div class="submit-button">
+    <button (click)="submitComment()">Submit Comment</button>
+  </div>
+</div>

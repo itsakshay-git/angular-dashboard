@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: lightseagreen;
+}
+
+
+.login{
+   padding-bottom: 20px;
+}
+
+.login-btn{
+    padding: 10px;
+    background-color: rgb(102, 102, 228);
+    border: none;
+}
+
+.login-btn:hover{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.int{
+    padding: 10px;
+    height: 10px;
+}
